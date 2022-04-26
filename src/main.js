@@ -6,11 +6,12 @@ import 'bulma/css/bulma.css'
 import Buefy from 'buefy'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
+import {faStar} from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 Vue.config.productionTip = false
 Vue.use(Buefy)
-library.add(faSearch)
+library.add(faSearch, faStar)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 new Vue({

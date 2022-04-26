@@ -4,15 +4,18 @@
     <b-navbar>
       <template #end>
         <b-field label="" class="m-3">
-          <b-input placeholder="LOCATION" v-model="location" rounded></b-input>
+          <b-input placeholder="Helsinki, Finland" v-model="location" rounded></b-input>
           <b-input placeholder="Add guests" v-model="guests" rounded></b-input>
           <div class="rounded p-2">
             <font-awesome-icon icon="fa-search" class=""></font-awesome-icon>
-            Search
           </div>
         </b-field>
       </template>
     </b-navbar>
+    <div class="stays">
+      <p class="title">Stays in finland</p>
+      <p>12+ stays</p>
+    </div>
     <div class="columns is-multiline">
       <ApartmentCard
         v-for="(apartment, index) in slicedApartments"
@@ -69,5 +72,9 @@ export default {
   /* border-left: 0; */
   /* padding: 10px; */
   color: rgba(245, 34, 27, 0.849);
+}
+.stays {
+  display: flex;
+  justify-content: space-between;
 }
 </style>

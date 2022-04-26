@@ -7,7 +7,6 @@
           <b-input placeholder="Add guests" v-model="guests" rounded></b-input>
           <div class="rounded p-2">
             <font-awesome-icon icon="fa-search" class=""></font-awesome-icon>
-            Search
           </div>
         </b-field>
       </template>
@@ -18,7 +17,7 @@
         <ApartmentCard
           v-for="(apartment, index) in filteredApartments"
           :key="apartment.id"
-          class="card"
+          class=""
           :apartment="apartment"
           :index="index"
         >
